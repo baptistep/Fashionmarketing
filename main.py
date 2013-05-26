@@ -1,15 +1,20 @@
 import webapp2
-from google.appengine.ext.webapp.util import run_wsgi_app
-from google.appengine.ext.webapp import util, template
-from google.appengine.ext import db
-from google.appengine.api import mail
-from appengine_utilities import sessions
-import datetime
+import os
+from google.appengine.ext.webapp import template
 
 
-class HomeHandler(webapp2.RequestHandler):
-  def get(self):
-    self.response.out.write(template.render("Templates/welcome.html")
+class MainPage(webapp2.RequestHandler):
 
-app = webapp2.WSGIApplication([
-  ('/', HomeHandler)], debug=True)
+    def get(self):
+        self.response.out.write(template.render('templates/welcome.html', locals()))
+
+
+application = webapp2.WSGIApplication([
+    ('/', MainPage),
+], debug=True)
+
+def main():
+    application.run()
+
+if __name__ == "__main__":
+    main()
