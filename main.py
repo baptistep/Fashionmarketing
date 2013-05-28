@@ -4,7 +4,6 @@ from google.appengine.ext.webapp import template
 
 
 class MainPage(webapp2.RequestHandler):
-
     def get(self):
         self.response.out.write(template.render('templates/welcome.html', locals()))
 
