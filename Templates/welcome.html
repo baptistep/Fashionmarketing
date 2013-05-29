@@ -1,26 +1,49 @@
 {% extends 'index.html' %} 
 {% block head %}
+<link rel="stylesheet" type="text/css" href="/css/stylesheet.css" media="all">
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="/js/jquery.bxslider.js"></script>
+<link href="/css/jquery.bxslider.css" rel="stylesheet" />
 {% endblock %}
 
 {% block content %}
+<div id="main">
+<div id="logo"> 
+	FASHION AUDIENCE
+</div>
 
 <div id="top-nav" class="nav">
 
 <ul id="mainnav">
-<li  class="main-menu" style="margin: 0px 0px -10px; padding-left: 25px; padding-right: 18px; visibility: visible; float:left;">What's new<span class="chosen-one"></span>
+<li  class="main-menu" style="margin: 1px 0px -10px; padding-left: 25px; padding-right: 18px; visibility: visible; float:left;">Advertiser<span class="chosen-one"></span>
 </li>
-<li class="main-menu" style="margin: 0px 0px -10px; padding-left: 18px; padding-right: 18px; visibility: visible; float:left;">Designers<span class="chosen-one"></span>
+<li class="main-menu" style="margin: 1px 0px -10px; padding-left: 18px; padding-right: 18px; padding-bottom: 4px; visibility: visible; float:left;">Publisher<span class="chosen-one"></span>
 </li>
-<li id="clothing" style="margin: 0px 0px -10px; padding-left: 18px; padding-right: 18px; visibility: visible; float:left;"> Clothing<span class="chosen-one"></span>
+<li id="clothing" style="margin: 1px 0px -10px; padding-left: 18px; padding-right: 18px; visibility: visible; float:left;">Wer sind wir?<span class="chosen-one"></span>
 </li>
-<li class="shoes main-menu" id="shoes" style="margin: 0px 0px -10px; padding-left: 18px; padding-right: 18px; visibility: visible; float:left;">Shoes<span class="chosen-one"></span>
+<li class="shoes main-menu" id="shoes" style="margin: 1px 0px -10px; padding-left: 18px; padding-right: 18px; visibility: visible; float:left;">Business Case<span class="chosen-one"></span>
 </li>
-<li class="accessories main-menu" id="accessories" style="margin: 0px 0px -10px; padding-left: 18px; padding-right: 18px; visibility: visible; float:left;">Accessories<span class="chosen-one"></span>
+<li class="accessories main-menu" id="accessories" style="margin: 1px 0px -10px; padding-left: 18px; padding-right: 18px; visibility: visible; float:left;">Contact<span class="chosen-one"></span>
 </li>        
-<li id="theDirectory" class="main-menu" style="margin: 0px 0px -10px; padding-left: 18px; padding-right: 18px; visibility: visible; float:left;">Gifts<span class="chosen-one"></span>
+<li id="theDirectory" class="main-menu" style="margin: 1px 0px -10px; padding-left: 18px; padding-right: 18px; visibility: visible; float:left;">Blog<span class="chosen-one"></span>
 </li>
 </ul>
 
+</div>
+<!-- Left menu -->
+<div id="leftmenu">
+Criteo's Performance Optimization Platform offers a PPC pricing model that gives you complete control of your campaign volume and ROI.
+At the same time, Criteo only displays high quality ads from quality advertisers.
+As a technology company, selling a performance product, everything we do on the buyside is focused on delivering the best possible performance. This comes significantly from the optimization of placements and priority with our publisher partners, but as importantly from our underlying buying technology
+Acquisition Network of Fashion Customers
+Run efficiently your campaign and acquire new customers - expand your reach
+</div>
+<!-- slideshow -->
+<div id="slideshow">
+<ul class="bxslider" style="margin-top:0px;">
+  <li><img src="/images/expand_your_reach.jpg" /></li>
+</ul>
+</div>
 </div>
 {% endblock %}
 </html>
